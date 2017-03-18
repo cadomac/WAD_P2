@@ -1,0 +1,99 @@
+<head>
+	<script src="jquery-3.2.0.slim.min.js"></script>
+	<script src="bootstrap.js"></script>
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+	<div id="title"><h2>Welcome to Mastermind - Web Edition!</h2></div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-3"><button class="btn btn-default" id="newgame">New Game</button></div>
+			<div class="col-md-3"><button class="btn btn-default" id="resume">Resume Game</button></div>
+			<div class="col-md-3"><button class="btn btn-default" id="analysis">Analysis</button></div>
+			<div class="col-md-3"><button class="btn btn-default" id="pause">Pause Game</button></div>
+		</div>
+	</div>
+
+<!-- 	<div id="table">
+		<div id="header">
+			<div class="col1">TURN</div>
+			<div class="col2"> | XXXX | </div>
+			<div class="col3">SCORE</div>
+		</div>
+		<div id="row0">
+			<div class="col1">1.</div>
+			<div class="col2"> | ____ | </div>
+			<div class="col3">:</div>
+		</div>
+		<div id="row1">
+			<div class="col1">2.</div>
+			<div class="col2"> | ____ | </div>
+			<div class="col3">:</div>
+		</div>
+		<div id="row2">
+			<div class="col1">3.</div>
+			<div class="col2"> | ____ | </div>
+			<div class="col3">:</div>
+		</div>
+		<div id="row3">
+			<div class="col1">4.</div>
+			<div class="col2"> | ____ | </div>
+			<div class="col3">:</div>
+		</div>
+		<div id="row4">
+			<div class="col1">5.</div>
+			<div class="col2"> | ____ | </div>
+			<div class="col3">:</div>
+		</div>
+		<div id="row5">
+			<div class="col1">6.</div>
+			<div class="col2"> | ____ | </div>
+			<div class="col3">:</div>
+		</div>
+		<div id="row6">
+			<div class="col1">7.</div>
+			<div class="col2"> | ____ | </div>
+			<div class="col3">:</div>
+		</div>
+		<div id="row7">
+			<div class="col1">8.</div>
+			<div class="col2"> | ____ | </div>
+			<div class="col3">:</div>
+		</div>
+		<div id="row8">
+			<div class="col1">9.</div>
+			<div class="col2"> | ____ | </div>
+			<div class="col3">:</div>
+		</div>
+		<div id="row9">
+			<div class="col1">10.</div>
+			<div class="col2"> | ____ | </div>
+			<div class="col3">:</div>
+		</div>
+		<div id="row10">
+			<div class="col1">11.</div>
+			<div class="col2"> | ____ | </div>
+			<div class="col3">:</div>
+		</div>
+		<div id="row11">
+			<div class="col1">12.</div>
+			<div class="col2"> | ____ | </div>
+			<div class="col3">:</div>
+		</div>
+	</div> -->
+
+	<script>
+	// $("#pause").hide();
+
+	$("#title").click(function() {
+  		alert("click");
+	});
+
+	$("#newgame").click(function(){
+		$.ajax({
+  		type: "POST",
+  		url: '/newgame',
+	})});
+	</script>
+</body>
